@@ -14,7 +14,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lambda-build": "netlify-lambda build functions-src",
-    "build": "npm run lambda-build"
+    "get-json": "node -r dotenv/config src/scripts/get-api-json.js",
+    "build": "npm run get-json"
   },
   "author": "",
   "license": "ISC"
