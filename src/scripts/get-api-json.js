@@ -1,6 +1,6 @@
 const { exec } = require("child_process");
 
-exec("wget " + process.env.API_PATH_GHIBLI + " -O ghibli.json", (error, stdout, stderr) => {
+exec("wget " + process.env.API_PATH_GHIBLI + " -O src/json/ghibli.json", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;

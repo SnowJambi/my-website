@@ -1,4 +1,4 @@
-fetch("/ghibli.json")
+fetch("json/ghibli.json")
   .then(response => response.json())
   .then(json => {
     for (const film of json) {
