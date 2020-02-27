@@ -1,13 +1,6 @@
 /* sass --watch src/styles/theme.scss:src/styles/theme.css src/styles/style.scss:src/styles/style.css src/styles/ghibli.scss:src/styles/ghibli.css */
-#div2 {
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
-}
-
 body {
   margin: 0;
-  height: 100vh;
   background-image: url(../img/light.webp);
   background-position: center;
   background-size: cover;
@@ -15,7 +8,6 @@ body {
 }
 
 html {
-  max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -23,19 +15,29 @@ html {
 h1 {
   text-align: center;
   color: #BBBEBE;
-  font-family: "Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 200;
+  margin: 100px;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+a:hover {
+  color: #52A5A8;
+  font-weight: 600;
 }
 
 nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-logo {
   width: 30px;
-  margin: 10px auto 10px 40px;
+  margin: 15px auto 15px 40px;
 }
 
 .nav-list {
@@ -45,7 +47,7 @@ nav {
 .nav-list li {
   float: left;
   list-style: none;
-  margin: 25px;
+  margin: 0px 30px;
   color: #BBBEBE;
   font-family: "Spartan", sans-serif;
 }
@@ -58,7 +60,6 @@ nav {
 }
 
 .center {
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -69,29 +70,8 @@ nav {
   width: 100px;
   height: 100px;
   padding-bottom: 25px;
-  display: flex;
+  display: block;
   margin: auto;
-}
-
-#name-header {
-  font-family: Montserrat, sans-serif;
-  color: #BBBEBE;
-  text-align: center;
-  font-size: 1.6rem;
-  letter-spacing: 4px;
-}
-
-#div2 {
-  background-color: #181413;
-  height: 100vh;
-  width: 100vw;
-}
-
-#container {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  bottom: 20px;
 }
 
 .glass {
@@ -116,6 +96,33 @@ nav {
   z-index: -1;
 }
 
+#name-header {
+  font-family: "Montserrat", sans-serif;
+  color: #BBBEBE;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+}
+
+#about {
+  background-color: #181413;
+  height: 100vh;
+  width: 100vw;
+}
+
+h2 {
+  text-align: center;
+  color: #BBBEBE;
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+}
+
+.scroll-arrows {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 20px;
+}
+
 .scroll-down, .scroll-down2 {
   position: relative;
   bottom: 20px;
@@ -130,7 +137,8 @@ nav {
   border-bottom: 2px solid #BBBEBE;
   border-right: 2px solid #BBBEBE;
   z-index: 9;
-  right: 6px;
+  right: 9px;
+  bottom: 55px;
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
@@ -140,7 +148,7 @@ nav {
 }
 
 .scroll-down2 {
-  bottom: 45px;
+  bottom: 80px;
   -webkit-animation: fade_move_down2 2s ease-in-out infinite;
   -moz-animation: fade_move_down2 2s ease-in-out infinite;
   animation: fade_move_down2 2s ease-in-out infinite;

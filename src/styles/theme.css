@@ -1,8 +1,3 @@
 /* sass --watch src/styles/theme.scss:src/styles/theme.css src/styles/style.scss:src/styles/style.css src/styles/ghibli.scss:src/styles/ghibli.css */
-#div2 {
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
-}
 
 /*# sourceMappingURL=theme.css.map */
