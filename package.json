@@ -16,8 +16,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lambda-build": "netlify-lambda build functions-src",
     "get-json": "node -r dotenv/config src/scripts/get-api-json.js",
-    "compile-sass": "src/styles/theme.scss:src/styles/theme.css src/styles/style.scss:src/styles/style.css src/styles/ghibli.scss:src/styles/ghibli.css",
-    "build": "npm run get-json compile-sass"
+    "compile-sass": "sass src/styles:src/styles",
+    "build": "npm run get-json && npm run compile-sass"
   },
   "author": "",
   "license": "ISC"
