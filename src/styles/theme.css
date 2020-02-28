@@ -1,3 +1,40 @@
 /* sass --watch src/styles/theme.scss:src/styles/theme.css src/styles/style.scss:src/styles/style.css src/styles/ghibli.scss:src/styles/ghibli.css */
+/*
+====================================================================================================================
+LIGHT GRADIENTS
+====================================================================================================================
+background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+background-color: #DCD9D4; 
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+ background-blend-mode: soft-light,screen;
+
+background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+
+====================================================================================================================
+DARK GRADIENTS
+====================================================================================================================
+background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+ background-blend-mode: multiply,multiply;
+
+background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+
+background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+
+background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+background: #bdc3c7;
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+
+background: #0F2027;  
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+
+*/
 
 /*# sourceMappingURL=theme.css.map */
