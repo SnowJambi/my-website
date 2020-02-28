@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  height: 100vh;
   background-image: url(../img/light.webp);
   background-position: center;
   background-size: cover;
@@ -9,6 +10,7 @@ body {
 }
 
 html {
+  max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -108,6 +110,7 @@ nav {
   color: theme.$snow;
   font-size: 1.6rem;
   letter-spacing: 4px;
+  text-align: center;
 }
 
 #about {
