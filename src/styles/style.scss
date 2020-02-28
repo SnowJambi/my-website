@@ -9,12 +9,13 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html {
   max-width: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 h1 {
@@ -178,7 +179,7 @@ nav {
 
 .laptop-picture {
   float: right;
-  width: 800px;
+  width: 500px;
   border-radius: 20%;
   margin-right: 50px;
 }
