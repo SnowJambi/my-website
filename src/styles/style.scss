@@ -178,10 +178,14 @@ nav {
 }
 
 .laptop-picture {
-  float: right;
-  width: 500px;
-  border-radius: 20%;
-  margin-right: 50px;
+  max-width: 90%;
+  align-self: center;
+  margin: 50px auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 #skills {
@@ -193,8 +197,129 @@ nav {
     color: theme.$snow;
     font-family: theme.$spartan;
     font-size: 1.2rem;
-    margin: 30px;
+    margin: 10px;
   }
+}
+
+.skill-bar {
+  width: 95%;
+  height: 4px;
+  background-color: #555;
+  margin-left: 10px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.skill-good {
+  height: 4px;
+  background: #1cd8d2;
+  background: -webkit-linear-gradient(to right, #93edc7, #1cd8d2);
+  background: linear-gradient(to right, #93edc7, #1cd8d2);
+  position: relative;
+}
+
+.skill-bad {
+  height: 4px;
+  background: #EB3349;
+  background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+  background: linear-gradient(to right, #F45C43, #EB3349);
+  position: relative;
+}
+
+.skill-bar-practiced {
+  @extend .skill-bar;
+  width: 90%;
+  background: #1cd8d2;
+  background: -webkit-linear-gradient(to right, #93edc7, #1cd8d2);
+  background: linear-gradient(to right, #93edc7, #1cd8d2);
+}
+
+.skill-bar-learning {
+  @extend .skill-bar;
+  width: 90%;
+}
+
+.skill-40 {
+  @extend .skill-bad;
+  width: 40%;
+}
+
+.skill-50 {
+  @extend .skill-good;
+  width: 50%;
+}
+
+.skill-60 {
+  @extend .skill-good;
+  width: 60%;
+}
+
+.skill-70 {
+  @extend .skill-good;
+  width: 70%;
+}
+
+.skill-80 {
+  @extend .skill-good;
+  width: 80%;
+}
+
+.key {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.475);
+  margin-top: 20px;
+}
+
+.flex-wrapper {
+  flex: 1 1 0px;
+  margin: 10px 0 20px 0;
+}
+
+// Projects section
+
+#projects {
+  padding: 10% 20%;
+  transform: skewY(10deg);
+  overflow-y: auto;
+
+  p {
+    color: theme.$snow;
+    font-family: theme.$spartan;
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+
+  h2 {
+    color: white;
+    font-family: theme.$montserrat;
+    text-align: center;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.project {
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 0 9px 3px rgba(0, 0, 0, 0.275);
+  justify-self: center;
+  align-self: center;
+  padding: 30px;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #333, #232526);
+  background: linear-gradient(to right, #333, #232526);
+}
+
+.project:hover {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.275);
+}
+
+.project-img {
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 // Animations
