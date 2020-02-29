@@ -1,0 +1,169 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    margin: 0 20px 0 20px;
+    font-weight: 300;
+}
+
+.navbar {
+    padding: 0;
+}
+
+#title {
+    background-color: #ff4c68;
+    padding-bottom: 70px;
+}
+
+#features {
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    line-height: 2;
+}
+
+#testimonials {
+    background-color: #ef8172;
+    color: #fff;
+    padding: 7% 0%;
+    text-align: center;
+}
+
+#pricing {
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.pricing-h2 {
+    margin: 50px;
+}
+
+.pricing-p {
+    margin: 50px;
+}
+
+.carousel-item {
+  padding: 0 20%;
+}
+
+.testimonial-text {
+    margin-bottom: 80px;
+}
+
+.testimonial-image {
+    border-radius: 100%;
+    width: 12%;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+}
+
+.press-img {
+    margin: 20px 50px 80px 50px;
+    width: 10%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    line-height: 1.5;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0px 1px #555;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+.title-cont {
+    padding: 1.5% 15%;
+}
+
+.col-feat {
+  padding: 5%;
+}
+
+.phone-img {
+    transform: rotate(20deg);
+    width: 50%;
+    left: 100px;
+    position: absolute;
+    z-index: 0;
+}
+
+@media (max-width: 1000px) {
+    .phone-img {
+        position: relative;
+        transform: rotate(0deg);
+        margin: 50px auto 0 auto;
+        left: 0;
+    }
+
+    #title {
+        text-align: center;
+    }
+}
+
+.title-row {
+    padding-top: 100px;
+}
+
+.btn-title {
+    margin: 30px 10px 10px 10px;
+}
+
+.fa-col1 {
+    color: #ef8172;
+    margin-bottom: 15px;
+}
+
+.fa-col1:hover {
+    color: #ff4c68;
+}
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.cta-h3 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: white;
+}
+
+#footer {
+    padding: 7% 20%;
+    text-align: center;
+}
+
+.f-icon {
+    margin: 0 10px 40px;
+}
