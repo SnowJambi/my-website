@@ -340,6 +340,10 @@ nav {
     font-family: theme.$montserrat;
     text-align: center;
   }
+
+  p {
+    margin: 0 25px;
+  }
 }
 
 .projects-grid {
@@ -353,11 +357,12 @@ nav {
   height: 450px;
   box-shadow: 0 0 9px 3px rgba(0, 0, 0, 0.275);
   justify-self: center;
-  padding: 30px;
+  padding: 0px;
   background: #232526;
   background: -webkit-linear-gradient(to right, #333, #232526);
   background: linear-gradient(to right, #333, #232526);
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .project:hover {
@@ -366,7 +371,9 @@ nav {
 
 .project-img {
   width: 100%;
-  margin: 10px 0 20px 0;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 @media (max-width: 1300px) {
@@ -374,8 +381,6 @@ nav {
     padding: 10% 7.5%;
   }
 }
-
-
 
 @media (max-width: 800px) {
   .project {

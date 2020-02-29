@@ -5,3 +5,4 @@ wget.exe
 /src/json/*.json
 /src/styles/*.css
 /src/styles/*.css.map
+/src/xml/*.xml
