@@ -11,7 +11,7 @@ fetch("json/ghibli.json")
       container.className = "container";
 
       heading.innerHTML = film.title;
-      description.innerHTML = film.description;
+      description.innerHTML = (film.description.length > 300) ? film.description.slice(0,300) + ". . ." : film.description.slice(0,300);
 
       div.appendChild(heading);
       div.appendChild(description);
