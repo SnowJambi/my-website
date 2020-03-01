@@ -74,6 +74,14 @@ nav {
   align-items: center;
 }
 
+.nav-transform {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
 .nav-logo {
   width: 30px;
   margin: 15px auto 15px 40px;
@@ -394,6 +402,95 @@ nav {
   }
 }
 
+// Contact section
+
+#contact {
+  padding: 10% 13%;
+  transform: skewY(10deg);
+
+  a {
+    font-family: theme.$spartan;
+    color: theme.$snow;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin: 20px 0;
+  }
+}
+
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 80px;
+}
+
+.contact-img {
+  height: 500px;
+  align-self: center;
+  justify-self: center;
+}
+
+.contact-details {
+  align-self: center;
+  justify-self: center;
+}
+
+.svg {
+  filter: invert(75%) sepia(6%) saturate(66%) hue-rotate(131deg) brightness(100%) contrast(95%);fill: theme.$snow;
+  vertical-align: middle;
+  margin-right: 20px;
+  padding-bottom: 6px;
+}
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 10% 5%;
+
+    a {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// Footer section
+
+.end {
+  height: 800px;
+  width: 100%;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  position: relative;
+  bottom: 350px;
+  margin-bottom: -350px;
+  z-index: -1;
+  display: flex;
+
+  p {
+    align-self: flex-end;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 2000px){
+  .end {
+    bottom: 400px;
+    margin-bottom: -400px;
+  }
+}
+
+@media (max-width: 1000px){
+  .end {
+    bottom: 600px;
+    margin-bottom: -600px;
+  }
+}
 // Animations
 
 .scroll-arrows {
