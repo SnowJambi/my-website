@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  height: 100vh;
   background-image: url(../img/light2.png);
   background-position: center;
   background-size: cover;
@@ -74,12 +73,26 @@ nav {
   align-items: center;
 }
 
-.nav-transform {
+.nav-in {
   position: fixed;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
   top: 0;
   left: 0;
-  right: 0;
+  right: 0;  
   z-index: 1000;
+  transition: top 0.5s;
+
+  .nav-logo {
+    width: 20px;
+    margin: 0px auto 0px 40px;
+  }
+}
+
+.nav-out {
+  @extend .nav-in;
+  top: -55px;
 }
 
 .nav-logo {
@@ -97,6 +110,12 @@ nav {
   margin: 0px 30px;
   color: theme.$snow;
   font-family: theme.$spartan;
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
 }
 
 // Header section
@@ -320,7 +339,7 @@ nav {
 }
 
 @media (max-width: 1000px) {
-  .skills-grid{
+  .skills-grid {
     display: unset;
   }
 
@@ -397,7 +416,7 @@ nav {
     margin: 50px auto;
   }
 
-  .projects-grid{
+  .projects-grid {
     display: unset;
   }
 }
@@ -422,7 +441,6 @@ nav {
   }
 }
 
-
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -441,7 +459,9 @@ nav {
 }
 
 .svg {
-  filter: invert(75%) sepia(6%) saturate(66%) hue-rotate(131deg) brightness(100%) contrast(95%);fill: theme.$snow;
+  filter: invert(75%) sepia(6%) saturate(66%) hue-rotate(131deg)
+    brightness(100%) contrast(95%);
+  fill: theme.$snow;
   vertical-align: middle;
   margin-right: 20px;
   padding-bottom: 6px;
@@ -478,14 +498,14 @@ nav {
   }
 }
 
-@media (max-width: 2000px){
+@media (max-width: 2000px) {
   .end {
     bottom: 400px;
     margin-bottom: -400px;
   }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .end {
     bottom: 600px;
     margin-bottom: -600px;
