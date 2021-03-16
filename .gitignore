@@ -6,3 +6,5 @@ wget.exe
 /src/styles/*.css
 /src/styles/*.css.map
 /src/xml/*.xml
+# Local Netlify folder
+.netlify
