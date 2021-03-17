@@ -1,0 +1,122 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: white;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+h2 {
+  color: #1e202a;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 14px;
+  color: #63687e;
+}
+
+.header {
+  background-color: #f5f7ff;
+  border-radius: 0 0 20px 20px;
+  padding: 40px 10% 40px 10%;
+}
+
+.wrapper, .header-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 10% 0 10%;
+}
+
+.header-flex {
+  margin: 0;
+}
+
+.platform {
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container, .sub-container {
+  background-color: #f0f2fa;
+  padding: 30px 70px;
+  border-radius: 5px 5px 10px 10px;
+  position: relative;
+}
+
+.main-container:hover, .sub-container:hover {
+  background-color: #e5e8f6;
+}
+
+.mini-border {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+#facebook {
+  background-color: #198ff5;
+}
+
+#twitter {
+  background-color: #1ca0f2;
+}
+
+#instagram {
+  background: linear-gradient(to right, #fdc468, #df4996);
+}
+
+#youtube {
+  background-color: #c4032a;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: bold;
+  color: #63687e;
+  margin-left: 5px;
+}
+
+.followers {
+  text-transform: uppercase;
+  color: #63687e;
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin: 0;
+  text-align: center;
+}
+
+.change-up, .change-down {
+  color: #1db489;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.change-down {
+  color: #dc414c;
+}
+
+.arrow {
+  margin-top: 2px;
+}
+
+#total-followers {
+  margin-top: -15px;
+  padding-bottom: 100px;
+}
+
+#stats {
+  margin-top: -100px;
+}
+
+/*# sourceMappingURL=style.css.map */

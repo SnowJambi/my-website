@@ -1,4 +1,4 @@
-var buttons = [...$(".btn")];
+var buttons = $(".btn");
 var pattern = [];
 var validate = [];
 var level = 1;
