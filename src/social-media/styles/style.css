@@ -67,7 +67,7 @@ h3 {
 
 .main-container, .sub-container {
   background-color: #f0f2fa;
-  border-radius: 5px 5px 10px 10px;
+  border-radius: 10px;
   position: relative;
   width: 250px;
 }
