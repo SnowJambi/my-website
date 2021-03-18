@@ -34,27 +34,28 @@ $inter: "Inter", sans-serif;
 body {
     font-family: $inter;
     margin: 0;
-    background-color: white;
+    background-color: $dark-blue-bg;
 }
 
 h1 {
     font-size: 50px;
     margin: 0px auto;
     text-align: center;
+    color: white;
 }
 
 h2 {
-    color: $dark-blue-text;
+    color: white;
     font-size: 30px;
 }
 
 h3 {
     font-size: 14px;
-    color: $dark-gray-blue;
+    color: $blue-text;
 }
 
 .header {
-    background-color: $pale-blue;
+    background-color: $dark-blue-top;
     border-radius: 0 0 20px 20px;
     padding: 40px 10% 40px 10%;
 }
@@ -102,14 +103,14 @@ h3 {
 }
 
 .main-container {
-    background-color: $light-gray-blue;
+    background-color: $dark-blue-card;
     border-radius: 5px 5px 10px 10px;
     position: relative;
     width: 250px;
 }
 
 .main-container:hover {
-    background-color: darken($light-gray-blue, 3%);
+    background-color: lighten($dark-blue-card, 3%);
 }
 
 .sub-container {
@@ -145,13 +146,13 @@ h3 {
 .tag {
     font-size: 12px;
     font-weight: bold;
-    color: $dark-gray-blue;
+    color: $blue-text;
     margin-left: 5px;
 }
 
 .followers {
     text-transform: uppercase;
-    color: $dark-gray-blue;
+    color: $blue-text;
     font-size: 12px;
     letter-spacing: 4px;
     margin: 0;
@@ -176,7 +177,7 @@ h3 {
 }
 
 #overview {
-    color: $dark-gray-blue;
+    color: white;
     margin: 30px 10% 15px 10%;
     font-size: 25px;
 }
@@ -192,11 +193,12 @@ h3 {
 
 .attribution { 
     font-size: 11px;
-    text-align: center; 
+    text-align: center;
+    color: white; 
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 70%); 
 }
 
 /* The switch - the box around the slider */
